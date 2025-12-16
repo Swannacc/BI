@@ -1,0 +1,22 @@
+# Environnements virtuels
+.venv/
+venv/
+env/
+bin/
+obj/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Streamlit
+.streamlit/config.toml
+
+# OS spécifiques
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
