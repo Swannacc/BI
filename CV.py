@@ -3,36 +3,59 @@ import streamlit as st
 # Configuration de la page
 st.set_page_config(page_title="CV Swann Accajou", page_icon="📊", layout="wide")
 
-# --- STYLE CSS ---
+# --- STYLE CSS ADAPTATIF ---
 st.markdown("""
     <style>
     /* Réduction de l'espace global dans la sidebar */
     [data-testid="stSidebarUserContent"] {
         padding-top: 20px;
     }
+    
+    /* Onglets adaptatifs */
     .stTabs [data-baseweb="tab-list"] {
         gap: 24px;
         justify-content: center;
     }
     .stTabs [data-baseweb="tab"] {
         height: 50px;
-        background-color: #f0f2f6;
         border-radius: 4px 4px 0px 0px;
         padding: 10px 20px;
         font-weight: bold;
+        /* Utilisation d'une couleur de fond neutre qui s'adapte */
+        background-color: rgba(151, 166, 195, 0.15); 
     }
     .stTabs [aria-selected="true"] {
-        background-color: #1E3A8A;
+        background-color: #1E3A8A; /* Bleu professionnel */
         color: white !important;
     }
-    .company-header { font-size: 24px; font-weight: bold; color: #1E3A8A; margin-bottom: 5px; }
-    .job-title { font-size: 19px; font-weight: bold; color: #374151; margin-top: 0px; }
-    .date-text { color: #6B7280; font-style: italic; font-weight: 600; }
+
+    /* En-têtes d'entreprises - Utilisation d'un bleu plus clair pour le mode sombre */
+    .company-header { 
+        font-size: 24px; 
+        font-weight: bold; 
+        color: #3b82f6; /* Bleu plus vif (plus lisible en dark mode) */
+        margin-bottom: 5px; 
+    }
     
-    /* Style pour des lignes de séparation plus fines */
+    /* Titres de postes - Couleur héritée du thème pour la lisibilité */
+    .job-title { 
+        font-size: 19px; 
+        font-weight: bold; 
+        margin-top: 0px; 
+    }
+    
+    /* Texte de date - Utilisation d'un gris moyen universel */
+    .date-text { 
+        color: #9ca3af; 
+        font-style: italic; 
+        font-weight: 600; 
+    }
+    
+    /* Séparateurs */
     hr {
         margin-top: 5px;
         margin-bottom: 10px;
+        opacity: 0.3;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -55,7 +78,7 @@ with st.sidebar:
     
     st.subheader("Soft Skills")
     st.write("- Polyvalence & Autonomie")
-    st.write("- Esprit Responsable & Solidaire")
+    st.write("- Esprit Responsable & Solidair")
 
     # --- SECTION : REMERCIEMENTS ---
     st.markdown("<br>", unsafe_allow_html=True) 
@@ -156,9 +179,7 @@ with tab_comp:
         st.header("🌍 Langues & Communication")
         st.write("🇬🇧 **Anglais :** Niveau C1 (Maîtrise professionnelle complète, usage quotidien possible).")
         st.write("🇪🇸 **Espagnol :** Niveau B2 (Bonne capacité de communication et de rédaction).")
-        st.write("---")
-        st.write("**Soft Skills :** Ma capacité à vulgariser des concepts techniques pour les métiers est un atout clé en Data Gouvernance.")
-    
+        
     with col2:
         st.header("⚽ Centres d'intérêt & Engagement")
         st.write("- **Golf :** Compétition et enseignement (Transmet la discipline et la précision).")
