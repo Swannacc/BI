@@ -57,7 +57,7 @@ with st.sidebar:
     st.write("- Polyvalence & Autonomie")
     st.write("- Esprit Responsable & Solidaire")
 
-    # --- SECTION : REMERCIEMENTS (Espace réduit) ---
+    # --- SECTION : REMERCIEMENTS ---
     st.markdown("<br>", unsafe_allow_html=True) 
     st.markdown("<hr>", unsafe_allow_html=True)
     st.subheader("🙏 Remerciements")
@@ -80,9 +80,10 @@ with tab_exp:
     st.markdown('<p class="job-title">Chargé de Projet MDM et Data Gouvernance (Alternance)</p>', unsafe_allow_html=True)
     st.markdown('<p class="date-text">Novembre 2024 - Présent | Paris</p>', unsafe_allow_html=True)
     st.markdown("""
-    * **Master Data Management (MDM) :** Pilotage de la stratégie de gestion des données de référence.
-    * **Data Gouvernance :** Définition des standards de qualité et des politiques de sécurité des données.
-    * **Coordination :** Liaison entre les équipes IT et les métiers.
+    * **Master Data Management (MDM) :** Pilotage opérationnel de la gestion des données de référence pour assurer une source de vérité unique et fiable au sein de l'organisation.
+    * **Data Gouvernance :** Élaboration et mise en œuvre de cadres normatifs garantissant la qualité, la sécurité et la conformité des actifs data.
+    * **Coordination transverse :** Animation des ateliers entre les directions IT et métiers pour aligner les architectures de données sur les besoins business.
+    * *Cette alternance me permet de développer une vision stratégique du cycle de vie de la donnée en milieu industriel.*
     """)
     st.divider()
 
@@ -91,8 +92,10 @@ with tab_exp:
     st.markdown('<p class="job-title">Traitement de Produits Structurés Financiers</p>', unsafe_allow_html=True)
     st.markdown('<p class="date-text">Juin - Août 2025 | Paris</p>', unsafe_allow_html=True)
     st.markdown("""
-    * **Web Scraping :** Extraction automatisée de données financières.
-    * **NoSQL :** Intégration et structuration de données sur MongoDB.
+    * **Automatisation Data :** Conception de scripts Python pour le scraping et le parsing automatique de données complexes extraites de term-sheets financiers.
+    * **Ingénierie de données :** Structuration et injection massive de flux de données hétérogènes vers une architecture MongoDB (NoSQL).
+    * **Outil d'aide à la décision :** Développement d'une interface facilitant l'accès aux données pour optimiser l'analyse de risques des conseillers.
+    * *Une mission axée sur la transformation de documents non structurés en bases de données exploitables.*
     """)
     st.divider()
 
@@ -100,35 +103,67 @@ with tab_exp:
     st.markdown('<p class="company-header">QUALISTAT</p>', unsafe_allow_html=True)
     st.markdown('<p class="job-title">Développeur Data & Full-Stack</p>', unsafe_allow_html=True)
     st.markdown('<p class="date-text">Mai - Juillet 2024 | Guadeloupe</p>', unsafe_allow_html=True)
-    st.write("* **SQL & PHP :** Création d'une plateforme de gestion de données pour le relogement social.")
+    st.markdown("""
+    * **Développement Application Web :** Création d'une plateforme de gestion et d'une base de données SQL dédiée au suivi du relogement social.
+    * **Architecture SQL :** Modélisation de schémas de données pour traiter les informations liées à l'habitat insalubre et prioriser les interventions.
+    * **Expérience Utilisateur (UX) :** Optimisation de l'interface en PHP pour faciliter la saisie terrain par les agents administratifs.
+    * *Un projet à fort impact social utilisant la donnée pour améliorer les conditions de vie.*
+    """)
+    st.divider()
+
+    # GSPOT
+    st.markdown('<p class="company-header">GSPOT</p>', unsafe_allow_html=True)
+    st.markdown('<p class="job-title">Responsable de Site et Professeur de Golf</p>', unsafe_allow_html=True)
+    st.markdown('<p class="date-text">Juin - Juillet 2023</p>', unsafe_allow_html=True)
+    st.markdown("""
+    * **Stratégie Marketing :** Définition et exécution du plan de lancement pour l'ouverture du site, incluant la communication digitale.
+    * **Paramétrage analytique :** Installation technique des simulateurs Trackman pour fournir des données précises sur les performances sportives.
+    * **Gestion opérationnelle :** Management autonome de la relation client et de la logistique du site au quotidien.
+    """)
 
 # --- ONGLET 2 : FORMATION ---
 with tab_form:
     st.header("Cursus Académique")
+    
     st.subheader("EFREI Paris")
-    st.markdown('<p class="date-text">2023 - Présent</p>', unsafe_allow_html=True)
+    st.markdown('<p class="date-text">2023 - Présent | Villejuif</p>', unsafe_allow_html=True)
     st.write("**Ingénierie Informatique, Data & Marketing**")
+    st.markdown("""
+    * Spécialisation hybride alliant ingénierie logicielle, data marketing et statistiques avancées.
+    * Apprentissage approfondi de la visualisation de données (Power BI) et de la veille numérique stratégique.
+    """)
     
     st.subheader("Asia Pacific University (APU)")
-    st.markdown('<p class="date-text">2025 | Malaisie</p>', unsafe_allow_html=True)
-    st.write("**Échange : AI & Business Intelligence**")
+    st.markdown('<p class="date-text">2025 | Kuala Lumpur, Malaisie</p>', unsafe_allow_html=True)
+    st.write("**Échange Universitaire : Digital Business & AI**")
+    st.markdown("""
+    * Immersion dans les écosystèmes business numériques et l'intelligence artificielle appliquée à la résolution de problèmes.
+    * Pratique du Design Thinking pour la conception de solutions technologiques centrées sur l'utilisateur.
+    """)
 
     st.subheader("Polytechnique Montréal")
     st.markdown('<p class="date-text">2018 - 2022 | Canada</p>', unsafe_allow_html=True)
     st.write("**Ingénierie Mécanique**")
+    st.markdown("""
+    * Cycle préparatoire intégré et cursus ingénieur axés sur les mathématiques appliquées et la physique.
+    * Développement d'une forte rigueur d'analyse et d'une capacité à modéliser des systèmes complexes.
+    """)
 
 # --- ONGLET 3 : LANGUES & INTÉRÊTS ---
 with tab_comp:
     col1, col2 = st.columns(2)
     with col1:
-        st.header("🌍 Langues")
-        st.write("🇬🇧 **Anglais :** C1")
-        st.write("🇪🇸 **Espagnol :** B2")
+        st.header("🌍 Langues & Communication")
+        st.write("🇬🇧 **Anglais :** Niveau C1 (Maîtrise professionnelle complète, usage quotidien possible).")
+        st.write("🇪🇸 **Espagnol :** Niveau B2 (Bonne capacité de communication et de rédaction).")
+        st.write("---")
+        st.write("**Soft Skills :** Ma capacité à vulgariser des concepts techniques pour les métiers est un atout clé en Data Gouvernance.")
     
     with col2:
-        st.header("⚽ Centres d'intérêt")
-        st.write("- **Golf :** Pratique et enseignement.")
-        st.write("- **Investissement :** Gestion active (PEA, Crypto, NFT).")
+        st.header("⚽ Centres d'intérêt & Engagement")
+        st.write("- **Golf :** Compétition et enseignement (Transmet la discipline et la précision).")
+        st.write("- **Investissement :** Gestion de portefeuille (PEA, Crypto) - Analyse des marchés financiers.")
+        st.write("- **Esprit d'équipe :** Pratique régulière du basketball renforçant la solidarité et le leadership.")
 
 st.write("---")
-st.caption("Application Portfolio - Swann Accajou")
+st.caption("CV Interactif généré par Swann Accajou - 2025")
